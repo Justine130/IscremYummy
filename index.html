@@ -1,62 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 246, 192);
+        }
+
+        .Top {
+            background-color: rgb(255, 234, 138);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding-bottom: 100px;
+            border-bottom-style: solid;
+            border-color: rgb(153, 100, 2);
+            border-width: 6px;
+        }
+
+        .hphoto {
+            background-color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 10px;
+            position: absolute;
+            top: 15%;
+            left: 15px;
+            text-align: center;
+            border-style: solid;
+            border-color: rgb(209, 139, 8);
+            border-radius: 10px;
+        }
+
+        .name {
+            width: 400px;
+            position: absolute;
+            text-align: center;
+            top: -15px;
+            left: 60px;
+            font-size: 2.5rem;
+            font-family: 'Sughayer Separates', cursive;
+        }
+
+        .page1 {
+            position: absolute;
+            top: 40px;
+            left: 450px;
+            font-size: 1rem;
+            background-color: rgb(255, 216, 109);
+            color: black;
+            padding: 0.5rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            border: 2px solid black;
+			font-family: 'Sughayer Separates', cursive;
+			transition: background-color 0.3s ease;
+        }
+
+        .page1:hover {
+            background-color: rgb(253, 253, 253);
+        }
+
+        .page1:active {
+            background-color: rgb(233, 169, 51);
+        }
+    </style>
 </head>
+<body>
+    <div class="Top">
+        <div class="hphoto">
+            <img src="cover.jpg.png" style="height:75px;">
+        </div>
+        <div class="name">
+            <p><b>Helado Delicioso</b></p>
+        </div>
+        <a href="products.html" class="page1">Products</a>
+    </div>
+    <p style="margin-top: 100px;">mew</p>
+    <img src="pogiboy.png" style="height:100px;">
+</body>
 
-<style>
-html, body {
-margin: 0;
-padding: 0;
-width: 100%;height: 100%;
-background-color: rgb(255, 246, 192);
-}
 
-.Top {
-	background-color: rgb(255, 234, 138);
-	position: relative;
-	top: 0%;
-	width: 100%;
-	padding-bottom: 100px;
-	width: 100%;
-	border-bottom-style: solid;
-	border-color: rgb(153, 100, 2);
-	border-width: 6px;
-	}
-.hphoto{
-	background-color: white;
-	width: 70px;
-	height: 70px;
-	border-radius: 10px;
-	position: absolute;
-	top: 15%;
-	left: 15px;
-	text-align: center;
-	border-style:solid;
-	border-color: rgb(209, 139, 8);
-	border-radius: 10px;
-}
-.name{
-	width: 400px;
-	position: absolute;
-	text-align: center;
-	top: -30px;
-	left: 45px;
-	font-size: 40px;
-	font-family: 'Sughayer Separates', cursive;
-
-}
-</style>
-<div class="Top">
-		<div class="hphoto">
-			<img src="cover.jpg" style="height:75px;">
-				<div class="name">
-					<p><b>Helado Delicioso</b></p>
-				</div>
-		</div>
-</div>
-<p style="margin-top: 100px;"></p>
 </html>
